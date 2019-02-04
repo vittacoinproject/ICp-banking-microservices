@@ -1,6 +1,6 @@
 /*
- * @author : Alexis Chretienne
- * @email : alexis.chretienne@fr.ibm.com
+ * @author : dirk dastedly
+ * @email : dirkdastedly@gmail.com
  * 
  * Sample code allowing to understand how to code API in Javascript
  * 
@@ -11,11 +11,11 @@ var url_api_devloper_portal = "https://api.us.apiconnect.ibmcloud.com/spbodieusi
 
 
 // Your API ClientID
-var IBM_CLIENT_ID = "YOUR_CLIENT_ID_HERE";
+var IBM_CLIENT_ID = "b4967481-7c04-476f-8769-f4eeab578bde ";
 
 
 // Your API ClientSecret
-var IBM_CLIENT_SECRET = "YOUR_CLIENT_SECRET_HERE";
+var IBM_CLIENT_SECRET = "G0dS4sN6bF7lK1tS5vM3bD8fR8vW7oI1pU0gD2bI8lB7nE0pI6";
 
 
 /*
@@ -78,7 +78,7 @@ function customerContract() {
 function balanceInquiry() {
 
 	var path = "/accounts/";
-	var pathParameter = $("#inputBalanceInquiry").val();
+	var pathParameter = $("#inputBalanceInquiry").val(+2000000000);
 	var queryParamaeter = "?date=2019-10-10";
 
 	var data = pathParameter + queryParamaeter;
